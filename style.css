@@ -627,4 +627,45 @@ section a {
     display: block;
 }
 
+  /* ① フッターを画面下に固定 */
+footer {
+    position: fixed;   /* 固定配置 */
+    bottom: 0;         /* 画面下端に */
+    left: 0;           /* 画面左端に */
+    width: 100%;       /* 横いっぱいに */
+
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.1); /* 軽い影で浮き上がり */
+    z-index: 999;      /* 前面に出す */
+  }
+  
+  /* ② ナビリンクの見た目 */
+  .footer-nav {
+    display: flex;
+    justify-content: center; /* リンクを中央揃え */
+    gap: 30px;               /* リンク同士の間隔 */
+    padding: 10px 0;         /* 上下の余白 */
+    background-color: #007BFF;
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    color: #fff;             /* リンク色 */
+  }
+  
+  /* ③ 下のコンテンツが隠れないように余白を確保 */
+  body {
+    padding-bottom: 60px;    /* フッターの高さ＋余裕分 */
+  }
+
+  .swiper {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
   

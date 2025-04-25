@@ -94,3 +94,14 @@ document.addEventListener("DOMContentLoaded", function () {
         dropdown.classList.toggle("active");
     });
 });
+
+  const swiper = new Swiper('.swiper', {
+    loop: false,
+    spaceBetween: 10,
+    centeredSlides: true,
+    slidesPerView: 1,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+
