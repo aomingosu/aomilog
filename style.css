@@ -674,10 +674,17 @@ footer {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   }
 
+  .update-date {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin: 1rem 0;
+  }
+  
+
   /* デスクトップ用の調整 */
 @media (min-width: 768px) {
     .manga-container img {
       max-width: 40%;
     }
   }
-  
