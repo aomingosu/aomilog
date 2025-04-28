@@ -657,15 +657,27 @@ footer {
     padding-bottom: 60px;    /* フッターの高さ＋余裕分 */
   }
 
-  .swiper {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-  }
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
-    display: block;
+  .manga-section {
+    padding: 2rem;
   }
   
+  .manga-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* 画像同士の間隔 */
+  }
+  
+  .manga-container img {
+    max-width: 90%;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  /* デスクトップ用の調整 */
+@media (min-width: 768px) {
+    .manga-container img {
+      max-width: 40%;
+    }
+  }
   
